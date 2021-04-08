@@ -6,10 +6,24 @@
   <component name="ChangeListManager">
     <list default="true" id="445bb110-ffa7-4571-95ef-28311ea9e409" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/controllers/MainController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/daos/CoupleDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/daos/CoupleDaoImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/daos/GenericDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/daos/GenericDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/persistence/Couple.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/persistence/Couple.java" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/daos/CoupleDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/persistence/daos/CoupleDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/daos/GenericDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/daos/LoverDaoImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/daos/interfaces/CRUDdao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/daos/interfaces/CoupleDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/persistence/daos/interfaces/CoupleDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/daos/interfaces/LoverDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/persistence/Couple.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/persistence/model/Couple.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/persistence/model/AbstractModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/persistence/model/Lover.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/services/LoginService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/services/LoginService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/services/LoginServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/services/LoginServiceImpl.java" afterDir="false" />
+>>>>>>> main
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/persistence/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/persistence/persistence.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -67,15 +81,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+<<<<<<< HEAD
     <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+=======
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+>>>>>>> main
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
+<<<<<<< HEAD
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
+=======
+      <option name="TEST_OBJECT" value="class" />
+>>>>>>> main
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -105,7 +127,11 @@
       <workItem from="1617877592750" duration="385000" />
       <workItem from="1617887754520" duration="35000" />
       <workItem from="1617887799913" duration="6743000" />
+<<<<<<< HEAD
       <workItem from="1617901626209" duration="10317000" />
+=======
+      <workItem from="1617904582244" duration="2564000" />
+>>>>>>> main
     </task>
     <servers />
   </component>

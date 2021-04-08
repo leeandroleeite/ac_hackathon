@@ -1,34 +1,22 @@
-package org.academiadecodigo.persistence;
+package org.academiadecodigo.persistence.model;
 
-import org.academiadecodigo.persistence.model.AbstractModel;
-import org.academiadecodigo.persistence.model.Lover;
-import org.springframework.stereotype.Component;
 
 import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-@Entity
-@Table(name = "couple")
-public class Couple extends AbstractModel {
+public class Couple {
 
-    @Id
-    @Column(unique = true)
     private String coupleName;
-
     private int password;
     private Date theBeginning;
     private Date lastFarewell;
     private String picture;
-
-    @OneToMany(
-            cascade = {CascadeType.ALL},
-            orphanRemoval = true,
-            mappedBy = "couple",
-            fetch = FetchType.EAGER
-    )
-    private List<Lover> lovers = new ArrayList<>();
+    private String yinMail;
+    private String yinLocation;
+    private String yangMail;
+    private String yangLocation;
 
     public String getCoupleName() {
         return coupleName;
@@ -62,20 +50,44 @@ public class Couple extends AbstractModel {
         this.lastFarewell = lastFarewell;
     }
 
-    public List<Lover> getLovers() {
-        return lovers;
-    }
-
-    public void setLovers(List<Lover> lovers) {
-        this.lovers = lovers;
-    }
-
     public String getPicture() {
         return picture;
     }
 
     public void setPicture(String picture) {
         this.picture = picture;
+    }
+
+    public String getYinMail() {
+        return yinMail;
+    }
+
+    public void setYinMail(String yinMail) {
+        this.yinMail = yinMail;
+    }
+
+    public String getYinLocation() {
+        return yinLocation;
+    }
+
+    public void setYinLocation(String yinLocation) {
+        this.yinLocation = yinLocation;
+    }
+
+    public String getYangMail() {
+        return yangMail;
+    }
+
+    public void setYangMail(String yangMail) {
+        this.yangMail = yangMail;
+    }
+
+    public String getYangLocation() {
+        return yangLocation;
+    }
+
+    public void setYangLocation(String yangLocation) {
+        this.yangLocation = yangLocation;
     }
 
     @Override
@@ -86,7 +98,6 @@ public class Couple extends AbstractModel {
                 ", lastName='" + password + '\'' +
                 ", email='" + theBeginning + '\'' +
                 ", phone='" + lastFarewell + '\'' +
-                ", accounts=" + lovers +
                 "} " + super.toString();
     }
 

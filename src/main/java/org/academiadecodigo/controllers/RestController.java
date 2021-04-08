@@ -1,8 +1,7 @@
 package org.academiadecodigo.controllers;
 
 import org.academiadecodigo.LoginForm;
-import org.academiadecodigo.daos.interfaces.CoupleDao;
-import org.academiadecodigo.persistence.Couple;
+import org.academiadecodigo.persistence.model.Couple;
 import org.academiadecodigo.services.CoupleService;
 import org.academiadecodigo.services.LoginService;
 import org.springframework.beans.factory.annotation.Autowired;
