@@ -1,7 +1,6 @@
 package org.academiadecodigo.daos;
 
-import org.academiadecodigo.daos.GenericDao;
-import org.academiadecodigo.daos.LoverDao;
+import org.academiadecodigo.daos.interfaces.LoverDao;
 import org.academiadecodigo.fake.Lover;
 import org.springframework.stereotype.Repository;
 

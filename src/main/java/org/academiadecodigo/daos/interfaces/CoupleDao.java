@@ -1,4 +1,4 @@
-package org.academiadecodigo.daos;
+package org.academiadecodigo.daos.interfaces;
 
 import org.academiadecodigo.persistence.Couple;
 

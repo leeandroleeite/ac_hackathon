@@ -1,6 +1,7 @@
 package org.academiadecodigo.daos;
 
 
+import org.academiadecodigo.daos.interfaces.CoupleDao;
 import org.academiadecodigo.persistence.Couple;
 import org.springframework.stereotype.Repository;
 

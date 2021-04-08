@@ -1,7 +1,7 @@
-package org.academiadecodigo.daos;
+package org.academiadecodigo.daos.interfaces;
 
-import org.academiadecodigo.daos.CRUDdao;
-import org.academiadecodigo.fake.Lover;
+
+import org.academiadecodigo.persistence.model.Lover;
 
 public interface LoverDao extends CRUDdao<Lover> {
 
