@@ -7,7 +7,7 @@
         <packaging>war</packaging>
       </options>
     </properties>
-    <root id="archive" name="++++++++++++++++++++++++++++.war">
+    <root id="archive" name="farewell.war">
       <element id="artifact" artifact-name="hackathon:war exploded" />
     </root>
   </artifact>

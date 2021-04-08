@@ -107,7 +107,7 @@
 
     <build>
 
-        <finalName>++++++++++++++++++++++++++++</finalName>
+        <finalName>farewell</finalName>
 
         <plugins>
             <plugin>
@@ -128,7 +128,7 @@
                 <configuration>
                     <url>http://localhost:8080/manager/text</url>
                     <server>tomcat</server>
-                    <path>/+++++++++++++++</path>
+                    <path>/farewell</path>
                     <username>maven</username>
                     <password>maven</password>
                 </configuration>

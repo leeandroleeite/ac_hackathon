@@ -1,6 +1,6 @@
 <component name="ArtifactManager">
   <artifact type="exploded-war" name="hackathon:war exploded">
-    <output-path>$PROJECT_DIR$/target/++++++++++++++++++++++++++++</output-path>
+    <output-path>$PROJECT_DIR$/target/farewell</output-path>
     <properties id="maven-jee-properties">
       <options>
         <exploded>true</exploded>
@@ -16,11 +16,6 @@
         <element id="directory" name="lib">
           <element id="library" level="project" name="Maven: org.springframework:spring-core:4.3.11.RELEASE" />
           <element id="library" level="project" name="Maven: commons-logging:commons-logging:1.2" />
-          <element id="library" level="project" name="Maven: org.thymeleaf:thymeleaf-spring4:3.0.8.RELEASE" />
-          <element id="library" level="project" name="Maven: org.thymeleaf:thymeleaf:3.0.8.RELEASE" />
-          <element id="library" level="project" name="Maven: org.attoparser:attoparser:2.0.4.RELEASE" />
-          <element id="library" level="project" name="Maven: org.unbescape:unbescape:1.1.5.RELEASE" />
-          <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.7.25" />
           <element id="library" level="project" name="Maven: org.springframework:spring-webmvc:4.3.11.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-aop:4.3.11.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-beans:4.3.11.RELEASE" />
@@ -58,7 +53,7 @@
         </element>
       </element>
       <element id="directory" name="META-INF">
-        <element id="file-copy" path="$PROJECT_DIR$/target/++++++++++++++++++++++++++++/META-INF/MANIFEST.MF" />
+        <element id="file-copy" path="$PROJECT_DIR$/target/farewell/META-INF/MANIFEST.MF" />
       </element>
       <element id="javaee-facet-resources" facet="hackathon/web/Web" />
     </root>

@@ -13,13 +13,6 @@ public interface CRUDdao<T extends AbstractModel> {
      */
     List<T> findAll();
 
-    /**
-     * Gets the model
-     *
-     * @param id the model id
-     * @return the model
-     */
-    T findById(Integer id);
 
     /**
      * Saves or updates the model

@@ -7,12 +7,24 @@ import javax.persistence.*;
 @Entity
 public class Lover extends AbstractModel {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Integer id;
+
     private String nickName;
     private String email;
     private String location;
 
     @ManyToOne
     private Couple couple;
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
 
     public String getNickName() {
         return nickName;

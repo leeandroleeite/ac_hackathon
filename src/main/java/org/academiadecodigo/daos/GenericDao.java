@@ -29,11 +29,6 @@ public abstract class GenericDao<T extends AbstractModel> implements CRUDdao<T> 
     }
 
     @Override
-    public T findById(Integer id) {
-        return em.find(modelType, id);
-    }
-
-    @Override
     public T saveOrUpdate(T modelObject) {
         return em.merge(modelObject);
     }

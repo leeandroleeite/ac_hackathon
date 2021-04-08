@@ -9,10 +9,6 @@ import java.util.Date;
 @MappedSuperclass
 public abstract class AbstractModel {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id;
-
     @Version
     private Integer version;
 
@@ -22,13 +18,7 @@ public abstract class AbstractModel {
     @UpdateTimestamp
     private Date updateTime;
 
-    public Integer getId() {
-        return id;
-    }
 
-    public void setId(Integer id) {
-        this.id = id;
-    }
 
     public Integer getVersion() {
         return version;
@@ -57,7 +47,6 @@ public abstract class AbstractModel {
     @Override
     public String toString() {
         return "Model{" +
-                "id=" + id +
                 ", creationTime=" + creationTime +
                 ", updateTime=" + updateTime +
                 '}';
