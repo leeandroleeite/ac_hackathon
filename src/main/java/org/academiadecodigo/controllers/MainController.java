@@ -1,4 +1,4 @@
-package org.academiadecodigo;
+package org.academiadecodigo.controllers;
 
 import com.sun.org.apache.bcel.internal.generic.GETFIELD;
 import org.springframework.stereotype.Controller;
@@ -10,7 +10,7 @@ public class MainController {
 
     @RequestMapping(method = RequestMethod.GET, path = {"", "/"})
     public String testing() {
-        return "farewell";
+        return "index";
 
     }
 }

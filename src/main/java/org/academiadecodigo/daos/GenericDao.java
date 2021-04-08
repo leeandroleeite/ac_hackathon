@@ -21,6 +21,10 @@ public abstract class GenericDao<T extends AbstractModel> implements CRUDdao<T> 
         this.modelType = modelType;
     }
 
+    public void setEm(EntityManager em) {
+        this.em = em;
+    }
+
     @Override
     public List<T> findAll() {
         CriteriaQuery<T> criteriaQuery = em.getCriteriaBuilder().createQuery(modelType);

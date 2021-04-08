@@ -2,6 +2,7 @@ package org.academiadecodigo.persistence;
 
 import org.academiadecodigo.persistence.model.AbstractModel;
 import org.academiadecodigo.persistence.model.Lover;
+import org.springframework.stereotype.Component;
 
 import javax.persistence.*;
 import java.util.ArrayList;
