@@ -9,7 +9,7 @@ import java.util.List;
 public class Couple {
 
     private String coupleName;
-    private int password;
+    private String password;
     private Date theBeginning;
     private Date lastFarewell;
     private String picture;
@@ -26,11 +26,11 @@ public class Couple {
         this.coupleName = firstName;
     }
 
-    public int getPassword() {
+    public String getPassword() {
         return password;
     }
 
-    public void setPassword(int password) {
+    public void setPassword(String password) {
         this.password = password;
     }
 

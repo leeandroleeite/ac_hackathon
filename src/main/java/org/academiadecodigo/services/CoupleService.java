@@ -6,4 +6,6 @@ import org.academiadecodigo.persistence.model.Couple;
 public interface CoupleService {
 
     Couple getCouple(String username);
+
+    void removeCouple(String coupleName);
 }

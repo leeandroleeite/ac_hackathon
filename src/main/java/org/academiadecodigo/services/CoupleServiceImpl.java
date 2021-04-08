@@ -20,4 +20,10 @@ public class CoupleServiceImpl implements CoupleService{
     public Couple getCouple(String username) {
         return coupleDao.findByUsername(username);
     }
+
+    @Override
+    public void removeCouple(String coupleName) {
+        coupleDao.delete(coupleName);
+
+    }
 }

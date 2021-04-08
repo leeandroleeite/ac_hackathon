@@ -58,4 +58,10 @@ public class RestController {
 
         return new ResponseEntity<Couple>(couple, HttpStatus.OK);
     }
+
+    @RequestMapping(method = RequestMethod.DELETE, path = "/delete/{coupleName}")
+    public ResponseEntity<?> delete(@PathVariable String coupleName) {
+        coupleService.removeCouple(coupleName);
+        return new ResponseEntity(HttpStatus.NO_CONTENT);
+    }
 }
