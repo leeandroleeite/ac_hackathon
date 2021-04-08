@@ -6,19 +6,18 @@
   <component name="ChangeListManager">
     <list default="true" id="445bb110-ffa7-4571-95ef-28311ea9e409" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/daos/GenericDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/daos/GenericDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/daos/LoverDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/daos/LoverDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/daos/interfaces/CRUDdao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/daos/interfaces/CRUDdao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/daos/interfaces/LoverDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/daos/interfaces/LoverDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/persistence/model/AbstractModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/persistence/model/AbstractModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/persistence/model/Lover.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/persistence/model/Lover.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/db/test-data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db/test-data.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/persistence/persistence-dev.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/persistence/persistence-dev.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/persistence/persistence-heroku.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/persistence/persistence-heroku.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/daos/CoupleDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/persistence/daos/CoupleDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/daos/GenericDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/daos/LoverDaoImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/daos/interfaces/CRUDdao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/daos/interfaces/CoupleDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/persistence/daos/interfaces/CoupleDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/daos/interfaces/LoverDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/persistence/Couple.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/persistence/model/Couple.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/persistence/model/AbstractModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/persistence/model/Lover.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/services/LoginService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/services/LoginService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/services/LoginServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/services/LoginServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/persistence/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/persistence/persistence.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/presentation.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,6 +71,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="test-data.sql" type="DatabaseScript" editBeforeRun="true" temporary="true" nameIsGenerated="true">
       <script-file value="$PROJECT_DIR$/src/main/resources/db/test-data.sql" />
       <script-mode>FILE</script-mode>
@@ -97,6 +107,7 @@
       <workItem from="1617877592750" duration="385000" />
       <workItem from="1617887754520" duration="35000" />
       <workItem from="1617887799913" duration="6743000" />
+      <workItem from="1617904582244" duration="2564000" />
     </task>
     <servers />
   </component>

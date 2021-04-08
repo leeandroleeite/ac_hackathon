@@ -1,6 +1,6 @@
 package org.academiadecodigo.services;
 
-import org.academiadecodigo.persistence.Couple;
+import org.academiadecodigo.persistence.model.Couple;
 
 public interface LoginService {
 
