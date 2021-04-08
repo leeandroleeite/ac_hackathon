@@ -1,7 +1,7 @@
 package org.academiadecodigo.services;
 
 import org.academiadecodigo.daos.CoupleDao;
-import org.academiadecodigo.fake.Couple;
+import org.academiadecodigo.persistence.Couple;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

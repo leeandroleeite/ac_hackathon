@@ -1,6 +1,6 @@
 package org.academiadecodigo.daos;
 
-import org.academiadecodigo.fake.AbstractModel;
+import org.academiadecodigo.persistence.model.AbstractModel;
 
 import java.util.List;
 

@@ -1,7 +1,7 @@
 package org.academiadecodigo.daos;
 
-import org.academiadecodigo.daos.CRUDdao;
-import org.academiadecodigo.fake.AbstractModel;
+
+import org.academiadecodigo.persistence.model.AbstractModel;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;

@@ -1,6 +1,7 @@
 package org.academiadecodigo.daos;
 
-import org.academiadecodigo.fake.Couple;
+
+import org.academiadecodigo.persistence.Couple;
 import org.springframework.stereotype.Repository;
 
 @Repository
