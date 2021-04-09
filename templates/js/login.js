@@ -29,12 +29,12 @@ function ajaxRequestLogin(event) {
 
     function successCallback(response) {
 
+        console.log(reponse);
         setCouple(response);
         window.location.href = "profile.html";
     }
 
     function errorCallback(request, status, error) {
-        console.log(status);
         alert("Wrong credentials, please try again or register.");
     }
 
