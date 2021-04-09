@@ -30,17 +30,33 @@ body, html {
   padding: 16px;
 }
 
+#about {
+  background-image: url('https://www.arrivecare.com/wp-content/uploads/2016/12/56-purple-orange-gradient.jpg');
+}
+
+/*
+#team {
+  background-image: url('https://www.arrivecare.com/wp-content/uploads/2016/12/56-purple-orange-gradient.jpg');
+}
+*/
+
+#contact{
+  background-image: url('https://www.arrivecare.com/wp-content/uploads/2016/12/56-purple-orange-gradient.jpg');
+}
+
 </style>
 
 
 
 <!-- Navbar (sit on top) -->
-<div class="w3-top">
-  <div class="w3-bar w3-white w3-card" id="myNavbar">
-    <a href="#home" class="w3-bar-item w3-button w3-wide"><img src="https://i.postimg.cc/rs2znRbz/Jose-Cid.png" width="40" height="40" id="cid-logo" alt="cid-logo"></a>
+<div class="w3-top" style="background-image: url('https://www.arrivecare.com/wp-content/uploads/2016/12/56-purple-orange-gradient.jpg');">
+  <div class="w3-bar w3-white w3-card" id="myNavbar" style="background-image: url('https://www.arrivecare.com/wp-content/uploads/2016/12/56-purple-orange-gradient.jpg')">
+    <a href="#home" class="w3-bar-item w3-button w3-wide" style="background-image: url('https://www.arrivecare.com/wp-content/uploads/2016/12/56-purple-orange-gradient.jpg')"><img src="https://i.postimg.cc/rs2znRbz/Jose-Cid.png" width="40" height="50" id="cid-logo" alt="cid-logo"></a>
     <!-- Right-sided navbar links -->
-    <div class="w3-right w3-hide-small">
-      <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
+    <div class="w3-right w3-hide-small" >
+      <a href="sign-in.html" class="w3-bar-item w3-button">REGISTER</a>
+      <a href="login.html" class="w3-bar-item w3-button"><i class="fa fa-signin"></i>SIGN IN</a>
+      <a href="#about" class="w3-bar-item w3-button"><i class="fa fa-about"></i>ABOUT</a>
       <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> TEAM</a>
       <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
     </div>
@@ -52,24 +68,14 @@ body, html {
   </div>
 </div>
 
-<!-- Sidebar on small screens when clicking the menu icon -->
-<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
-  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
-  <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
-  <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">WORK</a>
-  <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button">PRICING</a>
-  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
-</nav>
+
 
 <!-- Header with full-height image -->
-<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home" >
   <div class="w3-display-left w3-text-white" style="padding:48px">
-    <span style="color:blueviolet" id="bigText" class="w3-jumbo w3-hide-small">Placeholder Text</span><br>
+    <span style="color:rgb(228, 4, 248); border-bottom:3px solid rgb(228, 4, 248); font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; text-transform:uppercase; letter-spacing:-2px; font-weight:400; font-size:3em;-webkit-text-stroke-width: 2px; -webkit-text-stroke-color:black;" id="bigText" class="w3-jumbo w3-hide-small"><b>JOSÉ CID - THE CUPID</b></span><br>
     <span class="w3-xxlarge w3-hide-large w3-hide-medium">WHERE IS THIS</span><br>
-    <span class="w3-large">Distance means so little when someone means so much.</span>
-    <!--below: change href from about to landing page where you login/register-->
-    <p><a href="/templates/login-page.html" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Merge souls</a></p>
+    <span style="color:rgb(228, 4, 248); -webkit-text-stroke-width: 3px; font-family:'Gill Sans', 'Trebuchet MS', sans-serif; text-transform:uppercase; letter-spacing: 4px; -webkit-text-stroke-color:rgb(228, 4, 248);" class="w3-large"><b><i>Distance means so little when someone means so much</i></b></span>
   </div> 
 </header>
 
@@ -80,9 +86,9 @@ body, html {
 
 
 <!-- About Section -->
-<div class="w3-container" style="padding:128px 16px" id="about">
-  <h3 class="w3-center">ABOUT THE COMPANY</h3>
-  <p class="w3-center w3-large">Key features of our company</p>
+<div class="w3-container" style="padding:128px 16px" id="about" style="background-image: url('https://www.arrivecare.com/wp-content/uploads/2016/12/56-purple-orange-gradient.jpg')"  >
+  <h3 class="w3-center">WHAT WE CAN DO FOR YOUR LOVE</h3>
+  <p class="w3-center w3-large">AND FOR YOUR HAPPINESS</p>
   <div class="w3-row-padding w3-center" style="margin-top:64px">
     <div class="w3-quarter">
       <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
@@ -143,7 +149,7 @@ body, html {
       <div class="w3-card">
         <img src="https://media-exp1.licdn.com/dms/image/C5603AQHHUIXmu3eFeg/profile-displayphoto-shrink_800_800/0/1617540584981?e=1623283200&v=beta&t=4wRnkAEnwkIcTf1Pff4m16pm6pM6cbBAqheBLdZhfL0" alt="Mike" style="width:100%">
         <div class="w3-container">
-          <h3>Issac Santos</h3>
+          <h3>Isaac Santos</h3>
           <p class="w3-opacity">The best Host Ever</p>
           <p>"Love isn’t easy. There are no guarantees. But if you’re willing to do this with me, then I promise you that I’ll hold your hand and see it through all the way to the end with you – because that’s what I want. I want something real."</p>
           <form action="https://www.linkedin.com/in/isaacjgsantos/" target="_blank">
@@ -200,9 +206,9 @@ body, html {
   <h3 class="w3-center">CONTACT</h3>
   <p class="w3-center w3-large">Lets get in touch. Send us a message:</p>
   <div style="margin-top:48px">
-    <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Chicago, US</p>
-    <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +00 151515</p>
-    <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: mail@mail.com</p>
+    <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Porto, Quaralho</p>
+    <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: 9177...</p>
+    <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: jose-cid@amandate.com</p>
     <br>
     <form action="/action_page.php" target="_blank">
       <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
