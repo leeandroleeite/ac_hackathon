@@ -234,7 +234,7 @@ iframe {
   width: 100%;
   position: relative;
   border-bottom: 1px solid #e6e6e6;
-  padding: 29px 0;
+  padding: 15px 0;
 }
 
 .input100 {
@@ -245,7 +245,7 @@ iframe {
 
   display: block;
   width: 100%;
-  height: 50px;
+  height: 30px;
   background: transparent;
   padding: 0 10px 0 80px;
   -webkit-transition: all 0.4s;
@@ -359,9 +359,9 @@ iframe {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 20px;
+  padding: 0 15px;
   min-width: 160px;
-  height: 42px;
+  height: 30px;
   border-radius: 21px;
 
   background: #d41872;
