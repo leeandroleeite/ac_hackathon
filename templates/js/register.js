@@ -21,6 +21,8 @@ function ajaxRequest(event) {
         lastFarewell: $("#farewell").val()
     };
 
+   
+
     $.ajax({
         url: "http://zecupid.herokuapp.com/api/register",
         type: 'POST',
