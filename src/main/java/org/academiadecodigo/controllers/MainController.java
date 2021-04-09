@@ -11,6 +11,19 @@ public class MainController {
     @RequestMapping(method = RequestMethod.GET, path = {"", "/"})
     public String testing() {
         return "index";
+    }
+    @RequestMapping(method = RequestMethod.GET, path = { "/login"})
+    public String login() {
+        return "login";
+    }
 
+    @RequestMapping(method = RequestMethod.GET, path = {"/register"})
+    public String register() {
+        return "register";
+    }
+
+    @RequestMapping(method = RequestMethod.GET, path = {"/profile"})
+    public String profile() {
+        return "profile";
     }
 }
