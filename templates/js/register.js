@@ -1,7 +1,15 @@
+
+window.onload = (event) => {
+    var element = document.getElementById('signInForm');
+    console.log(element);
+    element.addEventListener('submit', ajaxRequest);
+}
+
 var couple;
 
+function ajaxRequest(event) {
 
-function ajaxRequest() {
+    event.preventDefault();
 
     couple = {
         coupleName: $("#coupleName").val(),
@@ -15,6 +23,7 @@ function ajaxRequest() {
     };
 
     console.log(couple);
+    alert(couple);
 
     $.ajax({
         url: "http://localhost:8080/farewell/api/register",
