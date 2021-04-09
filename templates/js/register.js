@@ -26,7 +26,7 @@ function ajaxRequest(event) {
     alert(couple);
 
     $.ajax({
-        url: "http://localhost:8080/farewell/api/register",
+        url: "http://zecupid.herokuapp.com/api/register",
         type: 'POST',
         data: JSON.stringify(couple),
         async: true,
@@ -38,6 +38,7 @@ function ajaxRequest(event) {
 
     function successCallback(response) {
 
+        setCouple(response);
         window.location.href = "profile.html";
     }
 
@@ -56,7 +57,3 @@ function ajaxRequest(event) {
 
 
 }
-
-  function shit(event) {
-        console.log("on click");
-    }
