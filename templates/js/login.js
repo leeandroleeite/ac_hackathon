@@ -1,87 +1,42 @@
 
-(function ($) {
-    "use strict";
+window.onload = (event) => {
+    var element = document.getElementById('loginForm');
+    element.addEventListener('submit', ajaxRequestLogin);
+}
+
+var couple;
+
+function ajaxRequestLogin(event) {
+
+    event.preventDefault();
+
+    couple = {
+        username: $("#username").val(),
+        password: $("#password").val()
+    };
 
 
-    /*==================================================================
-    [ Focus input ]*/
-    $('.input100').each(function(){
-        $(this).on('blur', function(){
-            if($(this).val().trim() != "") {
-                $(this).addClass('has-val');
-            }
-            else {
-                $(this).removeClass('has-val');
-            }
-        })    
+    $.ajax({
+        url: "http://zecupid.herokuapp.com/api/login",
+        type: 'POST',
+        data: JSON.stringify(couple),
+        async: true,
+        contentType: 'application/json',
+        success: successCallback,
+        error: errorCallback
+
     })
-  
-  
-    /*==================================================================
-    [ Validate ]*/
-    var input = $('.validate-input .input100');
 
-    $('.validate-form').on('submit',function(){
-        var check = true;
+    function successCallback(response) {
 
-        for(var i=0; i<input.length; i++) {
-            if(validate(input[i]) == false){
-                showValidate(input[i]);
-                check=false;
-            }
-        }
-
-        return check;
-    });
-
-
-    $('.validate-form .input100').each(function(){
-        $(this).focus(function(){
-           hideValidate(this);
-        });
-    });
-
-    function validate (input) {
-        if($(input).attr('type') == 'email' || $(input).attr('name') == 'email') {
-            if($(input).val().trim().match(/^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{1,5}|[0-9]{1,3})(\]?)$/) == null) {
-                return false;
-            }
-        }
-        else {
-            if($(input).val().trim() == ''){
-                return false;
-            }
-        }
+        setCouple(response);
+        window.location.href = "profile.html";
     }
 
-    function showValidate(input) {
-        var thisAlert = $(input).parent();
-
-        $(thisAlert).addClass('alert-validate');
+    function errorCallback(request, status, error) {
+        console.log(status);
+        alert("Wrong credentials, please try again or register.");
     }
 
-    function hideValidate(input) {
-        var thisAlert = $(input).parent();
 
-        $(thisAlert).removeClass('alert-validate');
-    }
-    
-    /*==================================================================
-    [ Show pass ]*/
-    var showPass = 0;
-    $('.btn-show-pass').on('click', function(){
-        if(showPass == 0) {
-            $(this).next('input').attr('type','text');
-            $(this).addClass('active');
-            showPass = 1;
-        }
-        else {
-            $(this).next('input').attr('type','password');
-            $(this).removeClass('active');
-            showPass = 0;
-        }
-        
-    });
-
-
-})(jQuery);
+}

@@ -1,7 +1,6 @@
 
 window.onload = (event) => {
     var element = document.getElementById('signInForm');
-    console.log(element);
     element.addEventListener('submit', ajaxRequest);
 }
 
@@ -21,9 +20,6 @@ function ajaxRequest(event) {
         theBeginning: $("#beginning").val(),
         lastFarewell: $("#farewell").val()
     };
-
-    console.log(couple);
-    alert(couple);
 
     $.ajax({
         url: "http://zecupid.herokuapp.com/api/register",
