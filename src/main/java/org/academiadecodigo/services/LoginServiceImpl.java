@@ -26,7 +26,7 @@ public class LoginServiceImpl implements LoginService{
             return false;
         }
 
-        return password.hashCode() == couple.getPassword();
+        return password.equals(couple.getPassword());
     }
 
     @Transactional

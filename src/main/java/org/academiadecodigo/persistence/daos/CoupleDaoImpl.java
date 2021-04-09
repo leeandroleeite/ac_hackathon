@@ -16,7 +16,7 @@ public class CoupleDaoImpl implements CoupleDao<Couple> {
     @Override
     public Couple findByUsername(String coupleName) {
         for (int i = 0;  i < database.size(); i++) {
-            if(database.get(i).getCoupleName() == coupleName) {
+            if(database.get(i).getCoupleName().equals(coupleName)) {
                 return database.get(i);
             }
         }
@@ -32,7 +32,7 @@ public class CoupleDaoImpl implements CoupleDao<Couple> {
     public Couple saveOrUpdate(Couple modelCouple) {
 
         for (int i = 0;  i < database.size(); i++) {
-            if(database.get(i).getCoupleName() == modelCouple.getCoupleName()) {
+            if(database.get(i).getCoupleName().equals(modelCouple.getCoupleName())) {
                 database.remove(database.get(i));
                 database.add(modelCouple);
                 return modelCouple;
@@ -46,7 +46,7 @@ public class CoupleDaoImpl implements CoupleDao<Couple> {
     @Override
     public void delete(String coupleName) {
         for (int i = 0;  i < database.size(); i++) {
-            if (database.get(i).getCoupleName() == coupleName) {
+            if (database.get(i).getCoupleName().equals(coupleName)) {
                 database.remove(database.get(i));
             }
         }

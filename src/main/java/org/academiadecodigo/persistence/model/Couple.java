@@ -1,18 +1,12 @@
 package org.academiadecodigo.persistence.model;
 
 
-import javax.persistence.*;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
-
 public class Couple {
 
     private String coupleName;
-    private int password;
-    private Date theBeginning;
-    private Date lastFarewell;
-    private String picture;
+    private String password;
+    private String theBeginning;
+    private String lastFarewell;
     private String yinMail;
     private String yinLocation;
     private String yangMail;
@@ -26,36 +20,28 @@ public class Couple {
         this.coupleName = firstName;
     }
 
-    public int getPassword() {
+    public String getPassword() {
         return password;
     }
 
-    public void setPassword(int password) {
+    public void setPassword(String password) {
         this.password = password;
     }
 
-    public Date getTheBeginning() {
+    public String getTheBeginning() {
         return theBeginning;
     }
 
-    public void setTheBeginning(Date theBeginning) {
+    public void setTheBeginning(String theBeginning) {
         this.theBeginning = theBeginning;
     }
 
-    public Date getLastFarewell() {
+    public String getLastFarewell() {
         return lastFarewell;
     }
 
-    public void setLastFarewell(Date lastFarewell) {
+    public void setLastFarewell(String lastFarewell) {
         this.lastFarewell = lastFarewell;
-    }
-
-    public String getPicture() {
-        return picture;
-    }
-
-    public void setPicture(String picture) {
-        this.picture = picture;
     }
 
     public String getYinMail() {
